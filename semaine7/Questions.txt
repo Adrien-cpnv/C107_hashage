@@ -1,0 +1,14 @@
+Pourquoi le montant solde est-il remis à zéro avant l’envoi des fonds (solde = 0; avant le call vers proprietaire) ?
+
+
+C’est pour éviter qu’un pirate retire plusieurs fois l’argent
+Si on envoyait l’argent avant de mettre le solde à zéro, 
+une personne très malveillante ou avide d'argent pourrait appeler la fonction encore et encore, 
+avant qu’elle se termine, et vider le contrat.
+
+
+À quoi sert la fonction receive() si elle fait juste un revert ?
+
+Elle sert à bloquer les gens qui essaient d’envoyer de l’argent directement au contrat 
+sans passer par la fonction deposer.
+Sans elle, quelqu’un pourrait envoyer des Ethers sans que le contrat sache quoi en faire

@@ -19,7 +19,7 @@ assert w3.is_connected(), "Échec de la connexion au nœud Ethereum"
 URI = "https://bronze-petite-antelope-488.mypinata.cloud/ipfs/bafkreigra4k4ekn5qby4t6u7larwfckxkemcnj44qfilknpdi6dmglnkmy"
 
 # Adresse et ABI du contrat déployé
-contract_address = "0x28eE64601A58EDC21BC2Da9e33448c2822371dED"
+contract_address = "0xCEcF361541E38dD0091525CcF86B4131104E5E0F"
 deployer_address = "0x7967c1641F06A2f5706db0f542FEa3D4eae1DBBF"
 recipient_address = deployer_address
 
@@ -27,7 +27,7 @@ sender_address = w3.to_checksum_address(deployer_address)
 
 
 # Charger l'ABI du contrat
-with open("VoleryAdrienNFT.abi", "r") as abi_file:
+with open("SimpleMintContract.abi", "r") as abi_file:
     contract_abi = json.load(abi_file)
 
 # Charger le contrat

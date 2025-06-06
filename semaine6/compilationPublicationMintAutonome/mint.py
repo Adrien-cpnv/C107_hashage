@@ -19,7 +19,7 @@ assert w3.is_connected(), "Échec de la connexion au nœud Ethereum"
 URI = "https://bronze-petite-antelope-488.mypinata.cloud/ipfs/bafkreibyfici24lylklkg2tfgxk4rfvp4tg53mqnw3mx53y4574j3tywwq"
 
 # Adresse et ABI du contrat déployé
-contract_address = "0x3cFB73e290600d75ACa30614c68b9f2206ea87F6"
+contract_address = "0xCEcF361541E38dD0091525CcF86B4131104E5E0F"
 deployer_address = "0x7967c1641F06A2f5706db0f542FEa3D4eae1DBBF"
 recipient_address = deployer_address
 
